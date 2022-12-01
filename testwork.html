@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestWork</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+
+        h4 {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 42px;
+            font-weight: 700;
+            padding: 20px 0;
+            color: #fff;
+        }
+        h3 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            padding: 15px 0;
+            color: #fff;
+        }
+        p {
+            text-align: center;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 15px 0;
+            color: #fff;
+        }
+        a {
+            color: #FF7F50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            background-color: #2e2d38;
+            padding: 50px 0;
+        }
+
+        .about__content-many-col {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .about__content-many-col > div {
+            flex: 0 0 30%;
+            padding: 15px 20px;
+            background-color: rgba(78,52,59,.71);
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+        .about__content-two-col {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .about__content-two-col > div {
+            flex: 0 0 50%;
+            padding: 15px 30px;
+            box-sizing: border-box;
+            margin: 10px 0;
+        }
+        .about__content-different-col {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .about__content-different-col > div {
+            flex: 0 0 48%;
+            padding: 15px 30px;
+            box-sizing: border-box;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .about__content-different-col > .about__content-white-col {
+            background-color: #dfdddb;
+        }
+        .about__content-different-col > .about__content-black-col {
+            background-color: rgba(78,52,59,1);
+        }
+        .about__content-white-col h3, .about__content-white-col p {
+            color: #000;
+        }
+
+        .footer {
+            margin-top: 50px;
+            background-color: #2e2d38;
+            padding: 50px;
+            text-align: center;
+        }
+        .footer > div {
+            width: 100%;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+        .footer p {
+            padding: 0;
+        }
+
+        @media (max-width: 800px) {
+            .about__content-many-col {
+                justify-content: center;
+            }
+            .about__content-many-col > div {
+                flex: 0 0 45%;
+            }
+            .about__content-two-col > div, .about__content-different-col > div {
+                flex: 0 1 600px;
+                margin: 10px auto;
+            }
+        }
+        @media (max-width: 500px) {
+            .about__content-many-col > div {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <section>
+        <h4 class="about__header">
+            <div class="about__header-text">
+                <span>Welcome to</span> SuperTopCasino
+            </div>
+        </h4>
+        <h3>THE CASINO</h3>
+        <p>
+            We are a high-end, trustworthy and transparent casino, one of the TOP 3 winners of 2019 AskGamblers Player's Choice Award.
+            Our casino powered by an advanced game platform which is developed by the professionals of this industry,
+            and designed to make your playing and sign-up as simple and easy as it can be. Dive into the world of really joyful online gambling only in our casino!
+        </p>
+    </section>
+</div>
+<div>
+    <section class="about__content-many-col">
+        <div>
+            <h3>THE TEAM</h3>
+            <p>
+                Gunsbet is guided by a group of experienced casino players who are the veterans in the field of gambling and
+                running of <a href="https://www.gunsbet.com/" target="_blank">online casinos</a>. Being players like you, we love casino games and really
+                know what gamblers need and want to when playing. Therefore, we are confident to offer you the highest quality of service, fast payouts and clear navigation.
+            </p>
+        </div>
+        <div>
+            <h3>THE VISION</h3>
+            <p>
+                According to our long-term experience, we highlight two important criteria for a good casino: the player should enjoy the process and the winning
+                should satisfy the expectations. All our efforts are aimed at creating an online platform where you can have a great time anywhere and on any device,
+                whether it be a computer, tablet or mobile phone. Our casino will help you earn more money, so that later you can transfer the pleasure from the game
+                to real life.
+            </p>
+        </div>
+        <div>
+            <h3>PAYMENT METHODS</h3>
+            <p>
+                Here at SuperTopCasino, we offer our users more than 20 payment options with instant processing time, which include payments via E-wallets, credit cards,
+                debit cards, bank transfers and even cryptocurrency, and to top it off, all of these payments are accepted in various currencies.
+                Such a wide range of payment methods makes SuperTopCasino casino more easily accessible to the players. We are interested in quick withdrawals as well,
+                since we consider the fact that nobody likes waiting, so we guarantee very fast cash-outs.
+            </p>
+        </div>
+    </section>
+</div>
+<div class="container">
+<section class="about__content-two-col">
+    <div>
+        <h3>SOFTWARE</h3>
+        <p>
+            Doubtless, the software is one of the important parts of any casino providing smooth operation. That's why this point could not be left without
+            our attention. Only best, only experienced, only well known software and game providers are integrated to Gunsbet. Among them are SoftSwiss,
+            Amatic, BetSoft, Netent, Microgaming, Bgaming, Evolution Gaming and others.
+        </p>
+    </div>
+    <div>
+        <h3>LICENSE</h3>
+        <p>
+            Gunsbet is legally permitted to conduct online gambling under the international License. Our Online Casino is operated by Direx N.V.,
+            a company established and registered under the laws of Curacao and its wholly-owned subsidiary, Direx Limited, registered address Stasinou 1,
+            MITSI Building 1, 1st Floor, Flat/Office 4, Plateia Eleftherias, Nicosia, Cyprus. Direx N.V. is licensed and regulated by Antillephone N.V.
+            Direx N.V.’s registration number is 131879 and its registered address is Heelsumstraat 51 E-Commerce Park, Curacao.
+        </p>
+    </div>
+</section>
+</div>
+<div>
+    <section class="about__content-different-col">
+        <div class="about__content-white-col">
+            <h3>LANGUAGES</h3>
+            <p>
+                We are developing our casino and want to make it available for the whole world. You will be surprised at the number of available languages:
+                English, German, Kazakh, Finnish, Norwegian, Czech, Japanese, Polish, Chinese, Korean, Spanish, Italian, Portuguese, French, Bulgarian, Estonian,
+                Croatian, Greek, Slovenian, Slovak, Hungarian. We do not intend to stop and will proceed to increase the availability of languages.
+            </p>
+        </div>
+        <div class="about__content-black-col">
+            <h3>SUPPORT</h3>
+            <p>
+                Care and attention for the players are among the proofs that we value and respect our players. SuperTopCasino, unlike many online gambling sites,
+                provides a home-like environment where you can reach out to our friendly and professional customer support team for any of your queries 24 hours a day,
+                365 days a year and receive a quick response. For that purpose, you can text via live chat or e-mail and even call the phone number specified
+                on the home page.
+            </p>
+        </div>
+    </section>
+</div>
+<div class="footer">
+    <div>
+        <h3>PLAY SAFE</h3>
+        <div>
+            <p>The XXX Online Casino has a legal permission the conduct online gambling on the basis of the international License.</p>
+            <p>
+                We understand that ensuring the fair game is one of the most important conditions for the casino operation.
+                Therefore, we offer you only games from reliable and long proven certified manufacturers!
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
